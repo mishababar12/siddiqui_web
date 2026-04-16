@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: process.env.REACT_APP_API_URL || 'https://siddiqui-motors-api.onrender.com/api',
+  baseURL: process.env.REACT_APP_API_URL || 'https://Mishababar-siddiqui-motors-api.hf.space/api',
 });
 
 api.interceptors.request.use((config) => {

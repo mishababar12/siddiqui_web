@@ -4,7 +4,7 @@ import { useAuth } from '../context/AuthContext';
 import api from '../services/api';
 import { formatPrice, formatDate } from '../utils/helpers';
 import toast from 'react-hot-toast';
-import { FiTruck, FiUsers, FiCalendar, FiMail, FiDollarSign, FiRefreshCw, FiTool, FiFileText, FiHelpCircle, FiStar, FiTrash2, FiEdit, FiPlus, FiX } from 'react-icons/fi';
+import { FiTruck, FiUsers, FiCalendar, FiMail, FiDollarSign, FiRefreshCw, FiTool, FiFileText, FiHelpCircle, FiStar, FiTrash2 } from 'react-icons/fi';
 
 const AdminDashboard = () => {
   const { user, isAuthenticated, loading: authLoading } = useAuth();
@@ -13,7 +13,9 @@ const AdminDashboard = () => {
   const [stats, setStats] = useState(null);
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
+  // eslint-disable-next-line no-unused-vars
   const [showModal, setShowModal] = useState(false);
+  // eslint-disable-next-line no-unused-vars
   const [modalForm, setModalForm] = useState({});
 
   useEffect(() => {
@@ -22,7 +24,7 @@ const AdminDashboard = () => {
     }
   }, [isAuthenticated, authLoading, user, navigate]);
 
-  useEffect(() => { if (activeTab === 'dashboard') fetchStats(); else fetchData(); }, [activeTab]);
+  useEffect(() => { if (activeTab === 'dashboard') fetchStats(); else fetchData(); }, [activeTab]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const fetchStats = async () => {
     setLoading(true);

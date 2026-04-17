@@ -62,7 +62,7 @@ const AboutPage = () => {
           <div className="flex flex-col lg:flex-row items-center gap-16">
             <div className="lg:w-1/2" data-aos="fade-right">
               <div className="relative">
-                <div className="w-full h-44 sm:h-64 lg:h-96 rounded-2xl bg-gradient-to-br from-[#C8A35F]/20 via-[#111111] to-[#C8A35F]/10 flex items-center justify-center border border-[#C8A35F]/20 overflow-hidden">
+                <div className="w-full p-6 lg:h-96 rounded-2xl bg-gradient-to-br from-[#C8A35F]/20 via-[#111111] to-[#C8A35F]/10 flex items-center justify-center border border-[#C8A35F]/20 overflow-hidden">
                   <div className="text-center">
                     <div className="text-5xl sm:text-6xl md:text-8xl font-black bg-gradient-to-r from-[#A88A42] via-[#C8A35F] to-[#D4B878] bg-clip-text text-transparent mb-2">SM</div>
                     <div className="text-sm sm:text-lg md:text-3xl font-bold text-white tracking-wider">SIDDIQUI MOTORS</div>

@@ -36,7 +36,7 @@ const AboutPage = () => {
         <div className="absolute top-20 left-10 w-72 h-72 rounded-full bg-[#C8A35F]/5 blur-3xl animate-float" />
         <div className="absolute bottom-10 right-20 w-56 h-56 rounded-full bg-[#C8A35F]/5 blur-3xl animate-float" style={{ animationDelay: '3s' }} />
         <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 animate-fadeInUp">
+          <h1 className="text-5xl md:text-6xl lg:text-6xl font-bold text-white mb-6 animate-fadeInUp">
             About <span className="bg-gradient-to-r from-[#A88A42] via-[#C8A35F] to-[#D4B878] bg-clip-text text-transparent">Siddiqui Motors</span>
           </h1>
           <p className="text-gray-300 text-xl md:text-2xl animate-fadeInUp" style={{ animationDelay: '0.4s' }}>
@@ -62,7 +62,7 @@ const AboutPage = () => {
           <div className="flex flex-col lg:flex-row items-center gap-16">
             <div className="lg:w-1/2" data-aos="fade-right">
               <div className="relative">
-                <div className="w-full h-56 sm:h-72 lg:h-96 rounded-2xl bg-gradient-to-br from-[#C8A35F]/20 via-[#111111] to-[#C8A35F]/10 flex items-center justify-center border border-[#C8A35F]/20 overflow-hidden">
+                <div className="w-full h-44 sm:h-64 lg:h-96 rounded-2xl bg-gradient-to-br from-[#C8A35F]/20 via-[#111111] to-[#C8A35F]/10 flex items-center justify-center border border-[#C8A35F]/20 overflow-hidden">
                   <div className="text-center">
                     <div className="text-5xl sm:text-6xl md:text-8xl font-black bg-gradient-to-r from-[#A88A42] via-[#C8A35F] to-[#D4B878] bg-clip-text text-transparent mb-2">SM</div>
                     <div className="text-sm sm:text-lg md:text-3xl font-bold text-white tracking-wider">SIDDIQUI MOTORS</div>

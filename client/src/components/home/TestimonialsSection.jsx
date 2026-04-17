@@ -10,16 +10,18 @@ const TestimonialsSection = () => {
   const [testimonials, setTestimonials] = useState([]);
 
   useEffect(() => {
+    const fallback = [
+      { _id: '1', name: 'Ahmed Khan', rating: 5, review: 'Best car dealership in Karachi! Got my dream car at an amazing price. The bank lease process was incredibly smooth.', designation: 'Business Owner', avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80' },
+      { _id: '2', name: 'Sara Ali', rating: 5, review: 'Excellent service and transparent dealing. The investment program gives me great monthly returns. Highly recommend Siddiqui Motors.', designation: 'Doctor', avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80' },
+      { _id: '3', name: 'Usman Sheikh', rating: 4, review: 'Great financing options and the documentation process was minimal. Professional team that truly cares about customers.', designation: 'Engineer', avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&q=80' },
+      { _id: '4', name: 'Fatima Riaz', rating: 5, review: 'The 24/7 towing service saved me at midnight! Fastest response time. Their vehicle inspection gave me complete confidence in my purchase.', designation: 'Teacher', avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80' },
+    ];
     getTestimonials()
-      .then(res => setTestimonials(res.data.data))
-      .catch(() => {
-        setTestimonials([
-          { _id: '1', name: 'Ahmed Khan', rating: 5, review: 'Best car dealership in Karachi! Got my dream car at an amazing price. The bank lease process was incredibly smooth.', designation: 'Business Owner', avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80' },
-          { _id: '2', name: 'Sara Ali', rating: 5, review: 'Excellent service and transparent dealing. The investment program gives me great monthly returns. Highly recommend Siddiqui Motors.', designation: 'Doctor', avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80' },
-          { _id: '3', name: 'Usman Sheikh', rating: 4, review: 'Great financing options and the documentation process was minimal. Professional team that truly cares about customers.', designation: 'Engineer', avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&q=80' },
-          { _id: '4', name: 'Fatima Riaz', rating: 5, review: 'The 24/7 towing service saved me at midnight! Fastest response time. Their vehicle inspection gave me complete confidence in my purchase.', designation: 'Teacher', avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80' },
-        ]);
-      });
+      .then(res => {
+        const data = res?.data?.data;
+        setTestimonials(Array.isArray(data) && data.length > 0 ? data : fallback);
+      })
+      .catch(() => setTestimonials(fallback));
   }, []);
 
   return (

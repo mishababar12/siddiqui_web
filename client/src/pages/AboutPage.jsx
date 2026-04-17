@@ -58,7 +58,7 @@ const AboutPage = () => {
 
       {/* Logo / Brand Section */}
       <section className="py-20 bg-[#111111]">
-        <div className="max-w-7xl mx-auto px-2 sm:px-4">
+        <div className="max-w-7xl mx-auto px-0 sm:px-4">
           <div className="flex flex-col lg:flex-row items-center gap-16">
             <div className="lg:w-1/2" data-aos="fade-right">
               <div className="relative">

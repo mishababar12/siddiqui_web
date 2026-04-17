@@ -20,10 +20,7 @@ const HeroSection = () => {
       <div className="absolute top-1/2 left-1/3 w-32 h-32 rounded-full bg-[#C8A35F]/5 blur-2xl animate-float" style={{ animationDelay: '4s' }} />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <span className="inline-block text-[#C8A35F] text-[10px] sm:text-sm md:text-base font-semibold tracking-[0.1em] sm:tracking-[0.2em] md:tracking-[0.3em] uppercase mb-4 md:mb-6 animate-fadeInUp">
-          WELCOME TO SIDDIQUI MOTORS
-        </span>
-        <h1 className="text-5xl md:text-6xl lg:text-8xl font-bold text-white mb-6 leading-tight">
+        <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-8xl font-bold text-white mb-6 leading-tight">
           <span className="inline-block animate-fadeInUp" style={{ animationDelay: '0.2s' }}>
             <span className="bg-gradient-to-r from-[#A88A42] via-[#C8A35F] to-[#D4B878] bg-clip-text text-transparent">
               <Typewriter
